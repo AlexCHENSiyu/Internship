@@ -1,0 +1,27 @@
+﻿  server.cpp
+C:\Users\chensiyu\source\repos\server\server/public.h(94,2): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+C:\Users\chensiyu\source\repos\server\server/public.h(100,42): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\chensiyu\source\repos\server\server/public.h(106,55): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\chensiyu\source\repos\server\server/public.h(125,15): warning C4244: “参数”: 从“SOCKET”转换到“int”，可能丢失数据
+C:\Users\chensiyu\source\repos\server\server/public.h(126,19): warning C4244: “参数”: 从“SOCKET”转换到“int”，可能丢失数据
+C:\Users\chensiyu\source\repos\server\server/public.h(127,21): warning C4267: “=”: 从“size_t”转换到“int”，可能丢失数据
+C:\Users\chensiyu\source\repos\server\server/public.h(130,18): warning C4244: “参数”: 从“SOCKET”转换到“const int”，可能丢失数据
+C:\Users\chensiyu\source\repos\server\server/public.h(153,14): warning C4244: “参数”: 从“SOCKET”转换到“int”，可能丢失数据
+C:\Users\chensiyu\source\repos\server\server/public.h(159,12): warning C4244: “参数”: 从“SOCKET”转换到“int”，可能丢失数据
+..\server.cpp(17,31): warning C4996: 'inet_addr': Use inet_pton() or InetPton() instead or define _WINSOCK_DEPRECATED_NO_WARNINGS to disable deprecated API warnings
+..\server.cpp(30,19): warning C4244: “=”: 从“SOCKET”转换到“int”，可能丢失数据
+..\server.cpp(54,20): warning C4996: 'itoa': The POSIX name for this item is deprecated. Instead, use the ISO C and C++ conformant name: _itoa. See online help for details.
+..\server.cpp(80,12): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“unsigned __int64”
+..\server.cpp(80,12): message : 请考虑在格式字符串中使用“%zd”
+..\server.cpp(95,18): warning C4244: “初始化”: 从“SOCKET”转换到“int”，可能丢失数据
+..\server.cpp(99,13): warning C4477: “printf”: 格式字符串“%d”需要类型“int”的参数，但可变参数 1 拥有了类型“unsigned __int64”
+..\server.cpp(99,13): message : 请考虑在格式字符串中使用“%zd”
+..\server.cpp(350,16): warning C4244: “初始化”: 从“time_t”转换到“unsigned int”，可能丢失数据
+..\server.cpp(506,24): warning C4267: “+=”: 从“size_t”转换到“int”，可能丢失数据
+  chess.cpp
+chess.cpp(5,16): warning C4838: 从“const int”转换到“SHORT”需要收缩转换
+chess.cpp(5,18): warning C4838: 从“const int”转换到“SHORT”需要收缩转换
+  正在生成代码...
+LINK : warning LNK4075: 忽略“/INCREMENTAL”(由于“/LTCG”规范)
+  LINK : 已指定 /LTCG，但不需要生成代码；从链接命令行中移除 /LTCG 以提高链接器性能
+  server.vcxproj -> C:\Users\chensiyu\source\repos\server\x64\Release\server.exe

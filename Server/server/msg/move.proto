@@ -1,0 +1,81 @@
+syntax = "proto3";
+
+//package chess;
+enum MsgType{
+	BaseMsgType = 0;
+	JoinRoomMsgType = 1;
+	LeaveRoomMsgType = 2;
+	RoomsMsgType = 3;
+	MoveMsgType = 4;
+	MessageMsgType = 5;	
+	OrderMsgType = 6;
+	ChessMapMsgType = 7;
+	ResultMsgType = 8;
+}
+
+
+message BaseMsg{
+	MsgType msg_type = 1;
+}
+
+
+message JoinRoomMsg{
+	MsgType msg_type = 1;
+	int32 RoomId = 2;
+	bool join = 3; //join success?
+	bool player = 4;	//is player or viewer?
+}
+
+
+message LeaveRoomMsg{
+	MsgType msg_type = 1;
+	int32 clientId = 2;	//who leave?
+	bool leave = 3; //leave success?
+}
+
+
+message RoomMsg{
+	int32 roomId =1;
+	int32 num_people = 2;  
+}
+
+
+message RoomsMsg{
+	MsgType msg_type = 1;
+	int32 clientId = 2;	//who wants clientId
+	repeated RoomMsg rooms = 10;
+}
+
+
+message MoveMsg {
+	MsgType msg_type = 1;
+	int32 move_x = 2;
+	int32 move_y = 3;
+	bool validation = 4;
+}
+
+
+message MessageMsg{
+	MsgType msg_type = 1;
+	string message = 2;
+	int32 clientId = 3; //client who send this message
+}
+
+
+message OrderMsg{
+	MsgType msg_type = 1;
+	int32 white = 2; //clientId: first
+	int32 black = 3; //clientId:second
+	bool gamestart = 4; //true for start and false for gameover
+}
+
+message ChessMapMsg{
+	MsgType msg_type = 1;
+	repeated int32 map = 2;
+	int32 step = 3;
+}
+
+message ResultMsg{
+	MsgType msg_type = 1;
+	int32 color = 2;
+}
